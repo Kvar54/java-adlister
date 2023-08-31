@@ -5,7 +5,10 @@
             <a class="navbar-brand" href="/ads">Adlister</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
+            <c:if test="${user ==null}">
             <li><a href="/login">Login</a></li>
+                <c:if test="${user != null}">
+
         </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
